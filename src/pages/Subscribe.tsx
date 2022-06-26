@@ -1,5 +1,6 @@
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
+import { Footer } from "../components/Footer";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
@@ -37,8 +38,8 @@ export function Subscribe() {
                         Construa uma <strong className="text-blue-500">aplicação completa</strong>, do zero, com <strong className="text-blue-500">React</strong>
                     </h1>
 
-                    <p className="mt-4 text-gray-300 leading-relaxed">
-                        Em apenas uma semana você vai dominar na prática....
+                    <p className="mt-4 text-gray-200 leading-relaxed">
+                    Em apenas uma semana você vai dominar na prática uma das tecnologias mais utilizadas e com alta demanda para acessar as melhores oportunidades do mercado.
                     </p>
 
                 </div>
@@ -74,7 +75,12 @@ export function Subscribe() {
 
             </div>
 
-            <img src="/src/assets/code-mockup.png" className="mt-10" alt="" />
+            <img src="/src/assets/code-mockup.png" className="mt-10 w-[600px]" alt="" />
+
+            <div className="fixed bottom-0 w-full">
+                <Footer />
+            </div>
+                
 
         </div>
     );

@@ -3,6 +3,7 @@ import { CaretRight, DiscordLogo, FileArrowDown, Image, Lightning } from "phosph
 
 import '@vime/core/themes/default.css'
 import { useGetLessonBySlugQuery } from "../graphql/generated";
+import { Footer } from "./Footer";
 
 interface VideoProps {
     lessonSlug: string;
@@ -29,7 +30,7 @@ export function Video(props: VideoProps) {
             <div className="bg-black flex justify-center ">
                 <div className="h-full w-full max-w-[1100px] max-h-[60vh] aspect-video">
                     <Player>
-                        <Youtube videoId={data.lesson.videoId} />
+                        <Youtube videoId={data.lesson.videoId} key={data.lesson.videoId} />
                         <DefaultUi />
                     </Player>
                 </div>
@@ -114,7 +115,8 @@ export function Video(props: VideoProps) {
                 </div>
 
             </div>
-
+            
+            <Footer />
         </div>
     );
 }
