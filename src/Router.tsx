@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Event } from "./pages/Event";
-import { NotFound } from "./pages/NotFounf";
+import { NotFound } from "./pages/NotFound";
 import { Subscribe } from "./pages/Subscribe";
 
 export function Router() {
