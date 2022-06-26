@@ -7,7 +7,7 @@ export function Footer() {
         <img src={LogoRocketseat} alt="" />
         <span className='text-gray-300 text-sm'>Rocketseat - Todos os direitos reservados</span>
       </div>
-      <span className='text-gray-900 text-sm'>Políticas de privacidade</span>
+      <span className='text-gray-300 text-sm'>Políticas de privacidade</span>
     </footer>
   );
 }
