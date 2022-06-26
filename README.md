@@ -1,4 +1,6 @@
 # Ignite Lab React
+### Acesse o resultado final: <a href="https://react-lab-ignite.vercel.app">site do React Lab</a>.
+---
 ### Página Inicial do Projeto
 <img src="./src/assets/screenshot-project/index.png">
 
